@@ -4,11 +4,10 @@
         <script>
             axios.get('https://api.sheety.co/824be84a-6466-4123-b6d9-b67af8792308')
                 .then(function (response) {
-                    console.log(response.data.pop()["pd_subs"]);
+                    var count = response.data.pop()["pd_subs"]
+                    console.log(count);
                     var str = document.getElementById("text");
-
-                    str.innerHTML = response.data.pop()["pd_subs"];
-
+                    str.innerHTML = count;
                 });
         </script>
     </head>
