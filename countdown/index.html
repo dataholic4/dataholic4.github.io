@@ -4,7 +4,8 @@
         <script>
             axios.get('https://api.sheety.co/824be84a-6466-4123-b6d9-b67af8792308')
                 .then(function (response) {
-                    console.log(response.data.pop());
+                    console.log(response.data.pop()["pd_subs"]);
+                    var dat = response.data.pop()["pd_subs"];
                 });
         </script>
     </head>
